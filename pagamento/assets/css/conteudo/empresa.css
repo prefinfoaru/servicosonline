@@ -1,0 +1,26 @@
+.container{
+    style="margin-left: -25px;"
+}
+
+
+.form-title{
+    text-align: center;
+    background-color: #244E98;
+	color: #ffff;
+	
+}
+
+.Form-title{
+    text-align: center;
+    background-color: #3498DB;
+	color: #ffff;
+	
+}
+.titulo{
+
+    text-align:center;
+}
+.recuo{
+    text-indent: 4em;
+    text-align: justify;
+}

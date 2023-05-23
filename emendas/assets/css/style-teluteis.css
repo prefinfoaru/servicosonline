@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media (min-width: 1345px ) and (max-width: 667px) {
+	#buscar{
+		width: 100%;
+	}
+   
+}
+
+@media (min-width: 360px) and (max-width: 640px) { 
+	#buscar{
+		width: 100%;
+	}
+	
+}
+
+@media (min-width: 320px) and (max-width: 568px) { 
+	#buscar{
+		width: 100%;
+	}
+	
+}
+
+@media (min-width: 375px) and (max-width: 667px){
+	#buscar{
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+	#buscar{
+		width: 100%;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1366px){
+	#buscar{
+		width: 100%;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 667px){
+	#buscar{
+		width: 100%;
+	}
+}
+@media (min-width: 280px) and (max-width: 653px){
+	#buscar{
+		width: 100%;
+	}
+}
+
+.div-title-prin{
+	
+	
+	padding: 10px 0px 5px;
+	border-radius: 7px 7px 7px 7px;
+}
+
+.div-title-prin h3{
+	
+	font-size: 20px;
+}
+
+.div-title {
+	
+	font-size: 14px;
+	text-align: center;
+	background-color: #B0E2FF;
+	padding-top: 2px;
+	height: 23px;
+	
+	
+	
+}
+
+
+
+.label-title{
+	
+	position: relative;
+	
+}
+.tr-table{
+	
+	color: #4F4F4F;
+	
+}
+
+.decr{
+	
+	cursor: pointer;
+	
+}

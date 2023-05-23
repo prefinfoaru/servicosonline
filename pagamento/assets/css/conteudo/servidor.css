@@ -1,0 +1,41 @@
+.container{
+    style="margin-left: -25px;"
+}
+
+
+.form-title{
+    text-align: center;
+    background-color: #244E98;
+	color: #ffff;
+	
+}
+
+.titulo{
+
+    text-align:center;
+    
+}
+
+
+.btn-default:hover{
+    color: #000000;
+    background-color: #F0FFFF;
+    border-color: #46b8da;
+    
+    }
+    .recovery-panel {
+    margin-top: 3%;
+    }
+    
+    .button-login{
+    text-align: left;
+    }
+    
+    .login{
+    text-align: center;
+    }
+}
+    .button-cad{
+    text-align: right;
+    }
+    

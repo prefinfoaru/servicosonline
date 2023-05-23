@@ -1,0 +1,321 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('../img/background.png');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img {
+  text-align: center;
+  margin-top: 2%;
+}
+.palavra {
+  font-size: 1.5vw;
+}
+.palavra2 {
+  font-size: 3vw;
+}
+
+#nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-right: 2px solid #00518936;
+}
+
+#nav ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#nav ul li {
+  width: 350px;
+  height: 180px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin: 20px 20px;
+  text-align: center;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#top {
+  padding: 20px 20px;
+  border-bottom: 5px solid #005189;
+  margin-bottom: 20px;
+}
+
+#titulo {
+  color: #000000;
+  margin-top: 5vh;
+  font-size: calc(2rem + (50 - 2) * ((100vw - 300px) / (5000 - 300)));
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.centro {
+  color: #000000;
+  margin-top: 5vh;
+  font-size: calc(2rem + (50 - 2) * ((100vw - 300px) / (5000 - 300)));
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.contact-form {
+  background: #fff;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  width: 80% !important;
+}
+
+.contact-form .form-control {
+  border-radius: 1rem;
+  font-size: 2em;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+
+.contact-image {
+  text-align: center;
+}
+
+.contact-image img {
+  width: 30%;
+  margin-top: -4%;
+}
+
+.proc {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+  border-bottom: 2px solid #55c5f0;
+}
+.contact-form form {
+  padding: 5%;
+}
+
+.contact-form form .row {
+  margin-bottom: -3%;
+}
+
+.contact-form .btnContact {
+  width: 20%;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.5%;
+  background: green;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1vw;
+
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+
+  box-shadow: 0 0 0 1px #0b3621 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #274e33, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btnsec {
+  white-space: normal !important;
+  position: relative;
+  top: -6px;
+  border: 0;
+  transition: all 40ms linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 25%;
+  height: 12vh;
+  margin-right: 1em;
+}
+
+.btnsec:active:focus,
+.btnsec:focus:hover,
+.btnsec:focus {
+  outline: medium none;
+}
+
+.btnsec:active,
+.btnsec.active {
+  top: 2px;
+}
+
+.btnsec {
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+
+  box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #4d5bbe, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #4274d7;
+  color: white;
+  font-size: 2.5vw;
+}
+
+.btnproc {
+  white-space: normal !important;
+  position: relative;
+  top: -6px;
+  border: 0;
+  transition: all 40ms linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 25%;
+  height: 15vh;
+  margin-right: 1em;
+}
+
+.btnproc:active:focus,
+.btnproc:focus:hover,
+.btnproc:focus {
+  outline: medium none;
+}
+
+.btnproc:active,
+.btnproc.active {
+  top: 2px;
+}
+
+.btnproc {
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+
+  box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #268eb5, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #50c4f0;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.btnvoltar {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800 !important;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 10%;
+  height: 5vh;
+  font-size: 1vw !important;
+}
+
+/* tela de carregamento */
+.contact-img {
+  text-align: center;
+}
+
+.contact-img img {
+  width: 30%;
+  margin-top: 4%;
+}
+
+@media print {
+  * {
+    background: transparent;
+    color: #000;
+    text-shadow: none;
+    filter: none;
+    -ms-filter: none;
+    /* width: 100%; */
+    max-width: 80mm !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  #comprovante,
+  #comprovante * {
+    display: block !important;
+  }
+}
+
+.c-loader {
+  animation: is-rotating 2s infinite;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #51d4db;
+  height: 100px !important;
+  width: 100px !important;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.centro {
+  text-align: center;
+}
+
+input[type='checkbox'] {
+  transform: scale(3.5);
+}
+table#parcela tr,
+td,
+th {
+  font-size: 20px !important;
+  text-align: center !important;
+}

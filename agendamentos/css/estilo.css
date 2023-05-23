@@ -1,0 +1,59 @@
+
+#form_agendamento input{
+    display: block;
+}
+h1{
+    text-align: center;
+    color:#FFF;
+}
+h2{
+    text-align: center;
+}
+footer h3{
+    text-align: center;
+    color:#FFF; 
+    font-weight: 600;
+    width: 100%;
+    
+}
+.jumbotron .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    background-color: #AACAE2;
+    padding-top: 5px;
+  }
+ 
+@media (min-width: 760px) {
+    .jumbotron .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto ;
+        width: auto;
+        height: auto;
+}
+    #esconde{
+      display: none;
+    }    
+}
+  .img_logo, .fundo_div{
+    background-color: #AACAE2;
+  }
+  .fundo_cont{
+    background-color: #f6f8fb;
+    margin-top: 10%;
+  }
+  .texto_logo{
+    color:#FFF;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+  }

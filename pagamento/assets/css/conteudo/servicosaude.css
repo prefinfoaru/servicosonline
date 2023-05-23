@@ -1,0 +1,65 @@
+/* SERVIÇO SAUDE CONTEUDO */
+.container{
+    style= "margin-left: -25px;"
+
+}
+.form-title{
+    text-align: center;
+    background-color: #244E98;
+    color: #ffff;
+}
+.Form-title{
+    text-align: center;
+    background-color: #3194E7;
+    color: #ffff;
+}
+
+/* BUSCA_SERVICOSAUDE */
+
+@charset "utf-8";
+/* CSS Document */
+
+.div-title-prin{
+	
+	
+	padding: 10px 0px 5px;
+	border-radius: 7px 7px 7px 7px;
+}
+
+.div-title-prin h3{
+	
+	font-size: 20px;
+}
+
+.div-title {
+	
+	font-size: 14px;
+	text-align: center;
+	background-color:  #244E98;
+	padding-top: 2px;
+	height: 23px;
+
+}
+
+.input-group {
+	
+	
+	width: 100%;
+	
+	
+}
+
+
+.label-title{
+	
+    position: relative;
+    color: #fff;
+	
+}
+
+
+.decr{
+	
+	cursor: pointer;
+	
+}

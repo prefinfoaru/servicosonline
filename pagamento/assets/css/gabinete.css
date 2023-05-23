@@ -1,0 +1,31 @@
+
+<style>
+
+    .how-section1{
+        margin-top:-10%;
+        padding: 10%;
+    }
+    .how-section1 h4{
+        color: rgb(36, 78, 152)  ;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .how-section1 h3{
+        color:rgb(36, 78, 152);
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .how-section1 .row{
+        margin-top: 8%;
+    }
+
+    .how-img {
+        text-align: center;
+    }
+
+    .how-img img{
+        width: 50%;
+    }
+
+</style>

@@ -1,0 +1,33 @@
+.jqbtk-row {
+  text-align: center;
+}
+.jqbtk-container .btn {
+  font-size: 2em;
+  width: 2em;
+  height: 1.9em;
+  text-align: center;
+  margin: 2px;
+}
+.jqbtk-container .jqbtk-space {
+  width: 12.5em;
+}
+.jqbtk-container .jqbtk-shift {
+  width: 5em;
+}
+.jqbtk-container .jqbtk-enter {
+  width: 4.5em;
+}
+.popover {
+  max-width: 1500px;
+}
+.keyboard-container {
+  overflow: hidden;
+  position: relative;
+}
+.keyboard-container .popover {
+  left: 0px !important;
+  top: 0px !important;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

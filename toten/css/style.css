@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: transparent !important;
+  background-image: url("../img/background.png") !important ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#top {
+  padding: 10px 40px;
+  margin-bottom: 20px;
+}
+
+#titulo {
+  color: black;
+
+  font-size: calc(3rem + (50 - 3) * ((100vw - 300px) / (5000 - 300)));
+  padding: 10px 60px;
+  border-bottom: 5px solid #244e98;
+}
+
+#btn-l {
+  font-size: 4.5rem;
+  margin-right: 6rem;
+  margin-bottom: 3rem;
+  border-right: 2px solid #00518936;
+  background-color: #32bbed;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #4d5bbe, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #4274d7;
+}
+
+.header {
+  height: calc(20% - 100px);
+}
+
+.content {
+  height: calc(60vh - 100px);
+}
+
+.footer {
+  height: calc(20% - 100px);
+}
+
+#car {
+  color: black;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+#img {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.btn3d {
+  position: relative;
+  top: -6px;
+  border: 0;
+  transition: all 40ms linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 30%;
+  height: 12vh;
+  margin-right: 1em;
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+  outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+  top: 2px;
+}
+
+.btn3d.btn-p {
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+
+  box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #4d5bbe, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #4274d7;
+  color: white;
+  font-size: 2.5vw;
+}

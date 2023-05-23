@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "Sec": "Obras",
+      "idsec": 123,
+      "processo": [
+        {
+          "nome": "PODA/ SUPRESSÃO/ REMOÇÃO DE ÁRVORES",
+          "campos": [
+            {
+              "label": "data",
+              "tipo": "data"
+            },
+            {
+              "label": "senha",
+              "tipo": "text"
+            },
+            {
+              "label": "data2",
+              "tipo": "data"
+            },
+            {
+              "label": "data3",
+              "tipo": "data"
+            },
+            {
+              "label": "nome3",
+              "tipo": "text"
+            },
+            {
+              "label": "senha3",
+              "tipo": "text"
+            }
+            
+            
+          ]
+        },
+        {
+          "nome": "EMPRÉSTIMO DE EQUIPAMENTOS (TENDA/SOM/PALCO)",
+          "campos": [
+            {
+              "label": "nome2",
+              "tipo": "text"
+            },
+            {
+              "label": "senha2",
+              "tipo": "password"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Sec": "Cultura",
+      "idsec": 321,
+      "processo": [
+        {
+          "nome": "cultura processo 1",
+          "campos": [
+            {
+              "label": "nome3",
+              "tipo": "text"
+            },
+            {
+              "label": "senha",
+              "tipo": "password"
+            }
+          ]
+        },
+        {
+          "nome": "cultura processo 2",
+          "campos": [
+            {
+              "label": "nome",
+              "tipo": "text"
+            },
+            {
+              "label": "senha",
+              "tipo": "password"
+            }
+          ]
+        },
+        {
+          "nome": "cultura processo 3",
+          "campos": [
+            {
+              "label": "nome",
+              "tipo": "text"
+            },
+            {
+              "label": "senha",
+              "tipo": "password"
+            }
+          ]
+        }
+
+      ]
+    }
+  ]
+}
+
+  

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+h3 {
+	
+	text-align: center;
+	
+}
+
+#imagem-fund{
+	
+	width: 70%;
+ 
+}
+
+.text-conteudo{
+	
+	text-align: center;
+	
+}
+.cont-title{
+	
+	font-size: 14px;
+	
+}

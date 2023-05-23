@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesec.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="css/jqbtk.css" rel="stylesheet" />
+    <script src="js/JsBarcode.all.min.js"></script>
+    <title>Totem</title>
+
+</head>
+
+<body>
+
+
+    <div class="bg">
+        <div class="container-fluid" id="cont1">
+    
+            <div class="row">
+    
+                <div class="col-xs-12 col-md-12" id="img">
+                    <img class="bigEntrance" src="img/logo2.png" style="width: 30%">
+                </div>
+    
+    
+            </div>
+    
+            <div class="row">
+    
+                <div class="col-md-12">
+                    <h1 id="titulo" class="pullUp">Consulta de Débitos</h1>
+                    <h1 id="titulo" class="pullUp">Por favor, Escolha o tipo de Débito!</h1>
+                   
+                </div>
+                <div class="col-md-12" align="right">
+    
+                    <a href="index.html" role="button" id="voltar" class="btn btnvoltar btn-danger bigEntrance">PÁGINA
+                        INICIAL</a>
+    
+                </div>
+    
+            </div>
+    
+    
+            <div id="nav">
+    
+                <ul id="menu">
+                    <ul>
+                        <button class="pullUp btnsec" onclick="pagamento('iptu')" type="button" >IPTU</button>
+                        <button class="pullUp btnsec" onclick="pagamento('taxas')" type="button" >TAXAS</button>
+                    </ul>
+    
+                </ul>
+            </div>
+    
+        
+    
+        </div>
+        <div class="container-fluid" id="cont2" style="display:none">
+    
+    
+    
+            <div class="container-fluid contact-form">
+    
+                <div class="col-md-12" align="left" style="margin-top: 2em">
+    
+                    <a href="index.html" role="button" id="voltar" class="btn btnvoltar btn-danger bigEntrance">CANCELAR</a>
+    
+                </div>
+                <div class="contact-image">
+                    <img class="slideDown" src="img/logo2.png" />
+                </div>
+                <div class="col-md-12" id="proc">
+    
+                    <h1 class="centro" id="tipo"></h1><br>
+                </div>
+    
+                <br><br>
+                <form method="post">
+    
+    
+    
+                    <div class="row">
+
+                        <div class="col-md-12" id="form">
+    
+    
+    
+                        </div>
+                        <br><br>
+                        <div class="col-md-12" id="mensagem" display="none">
+    
+    
+    
+                        </div>
+                        <br><br><br>
+                        <div class="col-md-12">
+                            <div class="form-group" align="right">
+                                <br><br>
+                                <input onClick="pegar()" class="btnContact" type="button"  value="Enviar" />
+                                <br><br>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+    
+                    
+                </form>
+    
+    
+            </div>
+    
+    
+    
+    
+    
+        </div>
+      
+    
+     
+    
+
+        <div class="container-fluid" id="cont3" style="display:none">
+    
+            <div class="container contact-form">
+    
+                <div class="col-md-12" align="left" style="margin-top: 2em">
+    
+                    <a href="index.html" role="button" id="voltar" class="btn btnvoltar btn-danger bigEntrance">CANCELAR</a>
+    
+                </div>
+                <div class="contact-image">
+                    <img class="slideDown" src="img/logo2.png" />
+                </div>
+                <br><br>
+                <div class="col-md-12" id="proc2">
+    
+                    <h1 id="titulo" >Selecione os valores para gerar o código de barras!</h1><br>
+                </div>
+                <div class="col-md-12" id="valor" align="center">
+    
+                   
+                </div>
+                <br><br>
+                <div class="col-md-12" id="mensagem2" display="none" >
+    
+    
+    
+                </div>
+                <br><br><br>
+                <div class="col-md-12">
+                    <div class="form-group" align="right">
+                        <br><br>
+                        <input  class="btnContact" type="button" id="buscar"  value="Buscar" />
+                        <br><br>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="container-fluid no-print" id="telacarregamento" style="display:none">
+    
+            <div class='row'><div class='contact-img'><img class='slideDown' src='img/logo2.png' /></div></div><br><br>
+    
+    
+        </div>
+        <div class="container-fluid no-print" id="telacarregamento2" style="display:none">
+    
+            <div class='row'><div class='contact-img'><img class='slideDown' src='img/logo2.png' /></div></div><br><br>
+    
+    
+        </div>
+
+        <div  id="comprovante" style="display: none;">
+           
+
+        </div>
+    </div>
+        
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script src="js/jqbtk.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js/jqbtk.js"></script>
+
+<script src="js/debito.js"></script>
+<script src="js/sil.js"></script>
+
+</html>

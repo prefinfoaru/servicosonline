@@ -1,0 +1,31 @@
+h11 {
+    color:red;
+}
+
+#logo {
+        width:50%;
+        height:50%;
+}
+
+.panel-heading{
+    font-size:150%;
+}
+
+.btn-default{
+   border-color: #3498db;	
+
+}
+.btn-default:hover{
+    color: #000000;
+    background-color: #F0FFFF;
+    border-color: #3498db;
+    
+}
+
+.btn-apagar{
+	
+	color:red;
+	cursor: pointer;
+	
+	
+}

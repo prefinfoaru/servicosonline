@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Meus Impostos</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script>
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <script src="assets/js/corrige_cpf_cnpj.js" defer></script>
+    <script src="assets/js/valida_cpf_cnpj.js" defer></script>
+    <!-- =======================================================
+  * Template Name: Arsha - v2.3.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .accord{
+        max-width: 100%;
+    }
+  </style>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo mr-auto">
+          <a href="index.html"><img src="assets/img/Sem título-6.png" /></a>
+        </h1>
+        <!-- Imagem  com logo -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <!-- <li class="active"><a href="index.html">Home</a></li> -->
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h1>Aplicativo meus Impostos</h1>
+            <h2>
+              Agora você pode pagar os seus tributos de forma mais rápida e
+              fácil.
+            </h2>
+            <div class="d-lg-flex">
+              <a href="#contact" class="btn-get-started scrollto">Pagar</a>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 order-1 order-lg-2 hero-img"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/img/impostos.png"
+              class="img-fluid animated"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <main id="main">
+      <!-- início do preloader -->
+      <div id="preloader2">
+        <div class="inner">
+          <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+          <div class="bolas">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <!-- fim do preloader -->
+      <!-- ======= Busca ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Busca de Débito</h2>
+            <p id="titulo">
+              Informe sua inscrição no campo abaixo para realizar a busca.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form action="" method="post" role="form" class="php-email-form">
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <div class="text-center disabletogle">
+                      <input
+                        id="toggle-on"
+                        class="toggle toggle-left"
+                        name="toggle"
+                        value="IPTU"
+                        type="radio"
+                        checked
+                        onclick="alteraInput(this.value)"
+                      />
+                      <label for="toggle-on" class="btn">IPTU</label>
+                      <input
+                        id="toggle-off"
+                        class="toggle toggle-right"
+                        name="toggle"
+                        value="TAXAS"
+                        type="radio"
+                        onclick="alteraInput(this.value)"
+                      />
+                      <label for="toggle-off" class="btn">TAXAS</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="text-center">
+                      <label for="tppesquisa" id="tppesquisa"
+                        >Digite a Inscrição do Imóvel</label
+                      >
+                      <div class="col-md-12">
+                        <input
+                          type="text"
+                          name="inscricao"
+                          class="form-control pesquisa"
+                          id="inscricao"
+                          data-rule="minlen:4"
+                          data-msg="Preencha  Corretamente"
+                          placeholder="Digite o Inscrição do Imóvel"
+                          required
+                        />
+
+                        <input
+                          type="text"
+                          name="cpf"
+                          class="form-control pesquisa"
+                          id="cpf"
+                          data-rule="minlen:4"
+                          data-msg="Preencha  Corretamente"
+                          placeholder="Digite o seu CPF ou CNPJ"
+                          required
+                          style="display: none"
+                        />
+                      </div>
+                      <div class="validate"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div id="conteudo" style="display: none"></div>
+                  <!-- <div class="error-message"></div> -->
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    name="buscar"
+                    id="buscar"
+                    onclick="buscaValor();"
+                  >
+                    Buscar
+                  </button>
+                  <!-- <button
+                    type="submit"
+                    name="gerarboleto"
+                    id="gerarboleto"
+                    onclick="geraBoleto();"
+                    style="display: none"
+                  >
+                    Gerar Boleto
+                  </button> -->
+                  <button
+                    type="submit"
+                    name="novabusca"
+                    id="novabusca"
+                    onclick="novaBusca();"
+                    style="display: none"
+                  >
+                    Nova Busca
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fim -->
+      <!-- ======= Dicas ======= -->
+      <section id="why-us" class="why-us section-bg">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+            >
+              <div class="content">
+                <h3>
+                  Com o aplicativo Meus Impostos fica muito fácil
+                  <strong>obter seus tributos para pagamento</strong>
+                </h3>
+              </div>
+
+              <div class="accordion-list">
+                <ul>
+                  <li>
+                    <a
+                      data-toggle="collapse"
+                      class="collapse"
+                      href="#accordion-list-1"
+                      ><span>01</span>Quais as formas de pagamento?
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-1"
+                      class="collapse show"
+                      data-parent=".accordion-list"
+                    >
+                      <p>
+                        O pagamento do IPTU poderá ser efetuado em parcela única, ou em até 08 (oito) parcelas conforme datas anteriormente informadas.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-toggle="collapse"
+                      href="#accordion-list-2"
+                      class="collapsed"
+                      ><span>02</span> Quais os descontos existentes?
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-2"
+                      class="collapse"
+                      data-parent=".accordion-list"
+                    >
+                      <p>
+                        Para o exercício de 2021, conforme estabelece a Lei Complementar nº 007/2007, os descontos a serem concedidos aos contribuintes que optarem pelo pagamento em parcela única, serão de 5%, mediante análise da existência de débitos tributários anteriores relativos ao imóvel.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-toggle="collapse"
+                      href="#accordion-list-3"
+                      class="collapsed"
+                      ><span>03</span> Quais os locais de pagamento?
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-3"
+                      class="collapse"
+                      data-parent=".accordion-list"
+                    >
+                      <p>
+                        A partir de janeiro de 2021, os bancos que aderiram ao credenciamento para serem agentes arrecadadores dos impostos, taxas e demais receitas municipais são os seguintes:<br>
+                        <img src="./assets/img/localiptu.jpg" class="img-responsive accord"><br>
+                        Os valores limites de pagamentos variam de acordo com a opção de canal de pagamento e instituição bancária em decorrência de questões de segurança e perfil dos clientes.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-toggle="collapse"
+                      href="#accordion-list-4"
+                      class="collapsed"
+                      ><span>04</span> Pagamento on-line (pelo site da Prefeitura)
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-4"
+                      class="collapse"
+                      data-parent=".accordion-list"
+                    >
+                      <p>
+                        O pagamento online utilizando cartão de crédito, está disponível no link  <a href="http://servicosonline.prefeituradearuja.sp.gov.br/servicosonline/pagamento/" target="_blank" style="display: inline;padding-right:0px ;">Pagamento de Boleto</a>.<br>
+                        O contribuinte pode escolher a melhor opção de parcelas e juros conforme simulação disponível.
+                      </p>
+                    </div>
+                  </li>
+
+                  <!-- <li>
+                    <a
+                      data-toggle="collapse"
+                      href="#accordion-list-3"
+                      class="collapsed"
+                      ><span>03</span> Uma outra duvida?
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-3"
+                      class="collapse"
+                      data-parent=".accordion-list"
+                    >
+                      <p>Um texto referente a isso.</p>
+                    </div>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+              style="background-image: url('assets/img/pagamento.png')"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              &nbsp;
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fim -->
+
+      <!-- ======= Cards para   serviços   extras ======= -->
+      <!-- <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Serviços</h2>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">Nome do serviço</a></h4>
+                <p>
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Nome do serviço</a></h4>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Nome do serviço</a></h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-layer"></i></div>
+                <h4><a href="">Nome do serviço</a></h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- Fim -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Prefeitura de Arujá</span></strong>
+        </div>
+      </div>
+    </footer>
+    <!-- FIM -->
+
+    <script src="sil.js"></script>
+    <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

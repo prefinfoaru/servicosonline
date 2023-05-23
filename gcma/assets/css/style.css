@@ -1,0 +1,163 @@
+body {
+  background-color: #efefef;
+}
+
+.bg-blue {
+  background-color: #244e98;
+}
+
+.text-blue {
+  color: #244e98;
+}
+
+.text-blue-2 {
+  color: #1d2549;
+}
+
+.top-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.top-link:hover {
+  text-decoration: underline;
+}
+
+.icon-link {
+  text-decoration: none;
+  transition: 300ms ease;
+}
+
+.icon-link:hover {
+  color: red;
+}
+
+.main-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: gray;
+  transition: 300ms ease;
+}
+
+.main-link:hover {
+  color: #244e98;
+}
+
+.circle-icon {
+  padding: 4px;
+  border-radius: 100px;
+  background-color: white;
+  color: #244e98;
+  transition: 300ms ease;
+}
+
+.circle-icon:hover {
+  background-color: red;
+  color: white;
+}
+
+.logo {
+  height: 136px;
+}
+
+.carousel {
+  z-index: -1;
+}
+
+.carousel-indicators {
+  z-index: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #244e98;
+}
+
+.text-dark-blue {
+  color: #1d2549;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* For mobile phones: */
+  .logo {
+    display: none;
+  }
+}
+
+.back-link {
+  text-decoration: none;
+  color: #1d2549;
+  transition: 300ms ease;
+}
+
+.info-card {
+  width: 50rem;
+}
+
+.contact {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.card-contact {
+  width: 60rem;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #cecbc5;
+}
+
+.contact-icon {
+  background-color: #5070a8;
+  padding: 0.6rem;
+  border-radius: 100px;
+}
+
+.btn-primary {
+  background-color: #244e98;
+  border-color: #244e98;
+  transition: 300ms ease;
+}
+
+.btn-primary:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.text-gold {
+  color: #f8cd4a;
+}
+
+.card-restrito {
+  height: 13rem;
+}
+
+.card-index {
+  height: 11rem;
+  transition: 300ms ease;
+}
+
+.card-index:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.link-card {
+  text-decoration: none;
+  color: black;
+}
+
+.link-card:hover {
+  color: black !important;
+}

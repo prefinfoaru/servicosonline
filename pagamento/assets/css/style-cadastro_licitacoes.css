@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+h3{
+	text-align: center;
+}
+.form-senha{
+	text-align: right;
+}
+
+.container-cad{
+	text-align: left;
+	width: 100%px;
+	border-width: 10px;
+	border:solid 1px;
+}
+.cad-lic-text{
+	text-align: center;
+}
+.btn-default:hover{
+	color: #000000;
+	background-color: #F0FFFF;
+	border-color: #46b8da;
+	
+}
+.button-login{
+	text-align: center;
+}
+#login{
+	text-align: center;
+	
+}
+

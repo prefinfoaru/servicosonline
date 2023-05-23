@@ -1,0 +1,84 @@
+html, body {
+  overflow-x: hidden;
+}
+
+/* Lists */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+#container {
+  position: relative;
+  padding: 20px 40px;
+  padding-top: 80px;
+}
+
+/* Menu Button */
+.menu-btn {
+  width: 130px;
+  padding: 10px;
+  margin-bottom: 00px;
+  background:#005189;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  margin-left: -0px;
+	
+
+}
+.menu-btn:hover {
+  opacity: 0.6;
+}
+
+.menu-btn2 {
+  width: 130px;
+  padding: 10px;
+  margin-bottom: 00px;
+  background:#CB5658;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  margin-left: -0px;
+	
+
+}
+.menu-btn2:hover {
+  opacity: 0.6;
+}
+
+/* Header */
+.site-header {
+  position: fixed;
+  background: #000;
+  color: #FFF;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 9998;
+}
+
+/* Footer */
+.site-footer {
+  position: relative;
+  border-top: 1px solid #EEE;
+  color: #999;
+  padding: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+a:link, a:visited, a:active {
+	text-decoration:none;
+	color: black;
+	}
+a:hover {
+	text-decoration: underline; 
+	color:#000; 
+	background:#9EB2C8 ;
+	}
+
+/*# sourceMappingURL=demo.css.map */
